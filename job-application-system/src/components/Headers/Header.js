@@ -18,7 +18,7 @@
 import React from "react";
 import { connect } from "react-redux";
 // reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import { Card, CardBody, Container, Row, Col } from "reactstrap";
 
 class Header extends React.Component {
   renderHeader = () =>

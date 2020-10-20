@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import Axios from 'axios';
+import login from "../../actions/login"
 // reactstrap components
 import {
   FormText,
@@ -29,7 +29,6 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
-  Row,
   Col
 } from "reactstrap";
 
@@ -38,31 +37,7 @@ function Login () {
   const [loginUsername,setLoginUsername] = React.useState("")
   const [loginPassword,setLoginPassword] = React.useState("")
   const [alertMessage,setMessage]=React.useState("")
-const login = (username,password) => {
-    if (username !== "")
-      if(password !== "")
-        Axios({
-            method: 'POST',
-            data: {
-                username,
-                password,
-            },
-            withCredentials: true,
-            url: "http://localhost:4000/login"
-        }).then((res) => {
-          if (res.data === "Successfully Authenticated"){
-            window.location='/user'
-          }
-          else{
-            setMessage(`Login Failed`)
-          }
-        })
-      else
-        setMessage(`Enter Password !`)
-    else
-      setMessage(`Enter Username !`)
 
-}
     return (
       <>
         <Col lg="5" md="7">
@@ -96,7 +71,7 @@ const login = (username,password) => {
                 </FormText>
                 </FormGroup>
                 <div className="text-center">
-                  <Button className="my-4" color="primary" type="button" onClick={()=>{login(loginUsername,loginPassword)}}>
+                  <Button className="my-4" color="primary" type="button" onClick={()=>{login(loginUsername,loginPassword,setMessage)}}>
                     Log in
                   </Button>
                 </div>
@@ -107,5 +82,4 @@ const login = (username,password) => {
       </>
     );
   }
-
 export default Login;

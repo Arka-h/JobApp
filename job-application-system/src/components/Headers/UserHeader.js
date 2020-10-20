@@ -19,7 +19,6 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from '../../actions';
 // reactstrap components
-import { Button, Container, Row, Col } from "reactstrap";
 
 class UserHeader extends React.Component {
   render() {

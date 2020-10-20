@@ -18,13 +18,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../../actions";
-import Axios from "axios";
 import * as emailjs from "emailjs-com";
 import {
   Button,
   Card,
   CardHeader,
-  CardBody,
   FormGroup,
   Label,
   Form,
@@ -41,11 +39,6 @@ import {
 
 // core components
 import Header from "components/Headers/Header";
-import UserHeader from "components/Headers/UserHeader.js";
-import axios from "axios";
-
-const ObjectId = require("mongodb").ObjectID;
-
 
 class Email extends React.Component {
   state = {

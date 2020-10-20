@@ -17,7 +17,7 @@
 */
 import React from "react";
 import Axios from 'axios';
-import Login from './Login'
+import login from '../../actions/login'
 // reactstrap components
 import {
   FormText,
@@ -59,7 +59,7 @@ function Register (){
     console.log(userType, this)
     if (userName==="")
       setAlertMessage1('Fill your Username !')
-    else if(password=="" & confirmPassword=="")
+    else if(password==="" & confirmPassword==="")
       setAlertMessage1(`Enter password!`)
     else if(password !== confirmPassword )
       setAlertMessage1(`Passwords don't match!`)
@@ -88,7 +88,7 @@ function Register (){
         }).then((res)=>{
           console.log(res)
           if (res.data === "User Created"){
-            (new Login()).login(userName,password)
+            login(userName,password,setAlertMessage2)
           }
           else if(res.data === "User already exists")
             setAlertMessage2(`User Already Exists !`)

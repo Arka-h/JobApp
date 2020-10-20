@@ -22,14 +22,8 @@ import React from "react";
 import { connect } from "react-redux";
 // reactstrap components
 import {
-  Button,
   Card,
   CardHeader,
-  CardBody,
-  NavItem,
-  NavLink,
-  Nav,
-  Progress,
   Table,
   Container,
   Row,

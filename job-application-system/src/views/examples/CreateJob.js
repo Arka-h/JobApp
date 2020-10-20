@@ -41,7 +41,6 @@ import axios from 'axios'
 
 const CreateJob = (props) => {
   const [jobName, setJobName] = React.useState("");
-  const [companyName, setCompanyName] = React.useState("");
   const [description, setDescription] = React.useState("");
 
   const createJob = () => {
@@ -117,7 +116,6 @@ const CreateJob = (props) => {
                             id="input-lastname"
                             placeholder="Company Name"
                             value={props.auth.company}
-                            onChange={(e) => setCompanyName(e.target.value)}
                             type="text"
                             disabled
                           />

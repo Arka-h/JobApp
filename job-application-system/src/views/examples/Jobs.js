@@ -18,10 +18,6 @@
 
 import React from "react";
 // node.js library that concatenates classes (strings)
-import classnames from "classnames";
-// javascipt plugin for creating charts
-import Chart from "chart.js";
-// react plugin used to create charts
 import { connect } from "react-redux";
 // reactstrap components
 import {
