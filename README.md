@@ -4,6 +4,7 @@ A prototype application platform for Job Seekers and Employers
 
 <br/>
 <br/>
+
 ## Features : 
 * Registration System for new users and Login System for existing candidates and employers.
 * Candidates can upload resume to apply for available jobs in the jobs section
@@ -32,6 +33,7 @@ A prototype application platform for Job Seekers and Employers
 
 <br/>
 <br/>
+
 ### PreRequisites
 * node.js
 
@@ -54,9 +56,10 @@ DB_NAME=<your_db_name>
 ```
 
 NOTE: Check the file mongo.js, you probably need to change that as well, and replace certain terms from the MongoDB Atlas string to replace it with `dbPassword` and `dbName`, so that they are fetched from the environment and used.
-<br/> 
+
 `mongodb+srv://admin:${dbPassword}@cluster0.zmjdd.mongodb.net/${dbName}?retryWrites=true&w=majority`
 <br/> 
 <br/> 
 Check out the prototype [here](https://www.figma.com/proto/y8Px0upLKDR0L9aCseNwAP/JobApp?node-id=6%3A2&scaling=scale-down)
+<br/>
 UI credits: [Creative Tim](https://www.creative-tim.com/product/argon-dashboard-react)
