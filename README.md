@@ -1,6 +1,6 @@
 # Job App
 An (almost) complete prototype for Job Seekers and Employers
-![Login Page](\job-application-system\src\assets\img\screenshots\login-filled.png)
+![Login Page](https://github.com/Arka-h/JobApp/blob/master/job-application-system/src/assets/img/screenshots/candidate-jobs.png)
 ### Features : 
 * Registration System for new users and Login System for existing candidates and employers.
 * Candidates can upload resume to apply for available jobs in the jobs section
