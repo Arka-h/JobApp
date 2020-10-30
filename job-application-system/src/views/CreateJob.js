@@ -166,5 +166,4 @@ const CreateJob = (props) => {
 };
 
 const mapStateToProps = ({ auth }) => ({ auth });
-
 export default connect(mapStateToProps, actions)(CreateJob);
