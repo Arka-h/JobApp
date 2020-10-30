@@ -52,20 +52,20 @@ let populateTable = (Job)=>{
     console.log(applicants)  
     return applicants.Resumes.map((obj,index)=>{
       console.log(obj)
-      return (<tr key={index}>
-        <th scope="row"> { `${obj.nameCan['firstName']} ${obj.nameCan['lastName']}` ||'Can-Name' }</th>
-        <td>{obj.emailCan||'email@id.com'}</td>
-        <td>
-        <a href={`http://localhost:4000/${obj.resumeFile}`}>
-          <i className="ni ni-cloud-download-95 fa-2x"></i>
-        </a>
-        </td>
-        <td>
-        <a href={`http://localhost:3000/user/${Job}/${obj._id}/email`}>
-          <i className="ni ni-send fa-2x"></i>
-        </a>
-        </td>
-        </tr>) 
+        return (<tr key={index}>
+          <th scope="row"> { `${obj.nameCan['firstName']} ${obj.nameCan['lastName']}` ||'Can-Name' }</th>
+          <td>{obj.emailCan||'email@id.com'}</td>
+          <td>
+          <a href={`http://localhost:4000/${obj.resumeFile}`}>
+            <i className="ni ni-cloud-download-95 fa-2x"></i>
+          </a>
+          </td>
+          <td>
+          <a href={`http://localhost:3000/user/${Job}/${obj._id}/email`}>
+            <i className="ni ni-send fa-2x"></i>
+          </a>
+          </td>
+          </tr>) 
     })
   }
   }
