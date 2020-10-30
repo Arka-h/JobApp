@@ -1,6 +1,6 @@
 # Job App
 An (almost) complete prototype for Job Seekers and Employers
-
+![Login Page](job-application-system\src\assets\img\screenshots\login-filled.png)
 ### Features : 
 * Registration System for new users and Login System for existing candidates and employers.
 * Candidates can upload resume to apply for available jobs in the jobs section
@@ -10,6 +10,10 @@ An (almost) complete prototype for Job Seekers and Employers
 * An employer can view the submitted resume by the job applicant that he is interested in.
 * An employer can reach out to the applicant by writing an email to them.
 * Each have a profile section which contain all their registered information, held by the application.
+
+![Candidate Page](job-application-system\src\assets\img\screenshots\candidate-jobs.png)
+
+![Employer Page](job-application-system\src\assets\img\screenshots\jobname1-candidates-initial.png)
 
 ### PreRequisites
 * node.js
