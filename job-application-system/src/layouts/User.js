@@ -23,13 +23,13 @@ import { Container } from "reactstrap";
 import UserNavbar from "components/Navbars/UserNavbar.js";
 import UserFooter from "components/Footers/UserFooter.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
-import UploadResume from "../views/examples/UploadResume"
+import UploadResume from "../views/UploadResume"
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import routes from "routes.js";
-import Email from "../views/examples/Email";
-import Applied from "../views/examples/Applied";
-import CreateJob from "../views/examples/CreateJob"
+import Email from "../views/Email";
+import Applied from "../views/Applied";
+import CreateJob from "../views/CreateJob"
 class User extends React.Component {
 
   componentDidMount(){

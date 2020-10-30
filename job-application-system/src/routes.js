@@ -16,12 +16,12 @@
 
 */
 // import Index from "views/Index";
-import Profile from "views/examples/Profile";
-import Register from "views/examples/Register";
-import Login from "views/examples/Login";
-import Jobs from "views/examples/Jobs";
-import Applied from 'views/examples/Applied'
-import Recruit from 'views/examples/Recruit'
+import Profile from "views/Profile";
+import Register from "views/Register";
+import Login from "views/Login";
+import Jobs from "views/Jobs";
+import Applied from 'views/Applied'
+import Recruit from 'views/Recruit'
 
 var routes = [
   // {
