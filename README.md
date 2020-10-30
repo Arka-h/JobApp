@@ -1,7 +1,10 @@
 # Job App
-An (almost) complete prototype for Job Seekers and Employers
+A prototype application platform for Job Seekers and Employers
 ![Login Page](https://github.com/Arka-h/JobApp/blob/master/job-application-system/src/assets/img/screenshots/login-filled.png)
-### Features : 
+
+<br/>
+<br/>
+## Features : 
 * Registration System for new users and Login System for existing candidates and employers.
 * Candidates can upload resume to apply for available jobs in the jobs section
 * The jobs applied can be viewed at the Applied section, by the candidate.  
@@ -11,10 +14,24 @@ An (almost) complete prototype for Job Seekers and Employers
 * An employer can reach out to the applicant by writing an email to them.
 * Each have a profile section which contain all their registered information, held by the application.
 
+<br/>
+<br/>
+
+### Candidate Page
+<br/>
+
 ![Candidate Page](https://github.com/Arka-h/JobApp/blob/master/job-application-system/src/assets/img/screenshots/candidate-jobs.png)
+
+<br/>
+<br/>
+
+### Employer Page
+<br/>
 
 ![Employer Page](https://github.com/Arka-h/JobApp/blob/master/job-application-system/src/assets/img/screenshots/jobname1-candidates-initial.png)
 
+<br/>
+<br/>
 ### PreRequisites
 * node.js
 
@@ -41,4 +58,5 @@ NOTE: Check the file mongo.js, you probably need to change that as well, and rep
 `mongodb+srv://admin:${dbPassword}@cluster0.zmjdd.mongodb.net/${dbName}?retryWrites=true&w=majority`
 <br/> 
 <br/> 
+Check out the prototype [here](https://www.figma.com/proto/y8Px0upLKDR0L9aCseNwAP/JobApp?node-id=6%3A2&scaling=scale-down)
 UI credits: [Creative Tim](https://www.creative-tim.com/product/argon-dashboard-react)
