@@ -32,7 +32,6 @@ import {
 
 
 import Header from "components/Headers/Header.js";
-import '../../assets/css/ball.css'
 
 function Recruit(props) {
 

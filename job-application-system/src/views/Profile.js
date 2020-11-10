@@ -17,7 +17,7 @@
 */
 import React from "react";
 import { connect } from "react-redux";
-import * as actions from '../../actions';
+import * as actions from '../actions';
 // Convert to functional component and Add refresh the data, 
 // Write an axios callback to update the required fields, 
 // through the profile update route on backend
@@ -70,20 +70,14 @@ class Profile extends React.Component {
                 </Row>
                 <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                   <div className="d-flex justify-content-between">
-                    <Button
-                      className="float-right"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="0"
-                    >
-                    </Button>
+                    
                     
                   </div>
                 </CardHeader>
                 <CardBody className="pt-8 pt-md-4 pb-0 pb-md-4">
                     <Row>
                     <div className="col">
-                      <div className="card-profile-stats d-flex justify-content-center mt-md-2">
+                      <div className="card-profile-stats d-flex justify-content-center md-2 mt-4">
                         <div>
                           <span className="heading">{ (this.props.auth.userType === undefined) ? "Unknown User" : this.props.auth.userType}</span> 
                         </div>

@@ -32,7 +32,6 @@ function UploadResume({
   }
 }) 
 {
-  
   const [selectedFile, setSelectedFile] = React.useState(null);
 
   const onChangeHandler = (event) => setSelectedFile(event.target.files[0]);
@@ -68,7 +67,7 @@ function UploadResume({
                 {/* File Upload */}
                 <form method="post" action="#" id="#">
                   <div className="form-group files align-items-center">
-                    <label>Upload Your File </label>
+                    <label>Upload Your File</label>
                     <input
                       type="file"
                       className="form-control"

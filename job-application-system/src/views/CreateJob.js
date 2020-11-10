@@ -17,7 +17,7 @@
 */
 import React from "react";
 import { connect } from "react-redux";
-import * as actions from "../../actions";
+import * as actions from "../actions";
 // Convert to functional component and Add refresh the data,
 // Write an axios callback to update the required fields,
 // through the profile update route on backend

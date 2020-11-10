@@ -30,6 +30,8 @@ import routes from "routes.js";
 import Email from "../views/Email";
 import Applied from "../views/Applied";
 import CreateJob from "../views/CreateJob"
+
+
 class User extends React.Component {
 
   componentDidMount(){

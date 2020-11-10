@@ -17,7 +17,7 @@
 */
 import React from "react";
 import { connect } from "react-redux";
-import * as actions from "../../actions";
+import * as actions from "../actions";
 import * as emailjs from "emailjs-com";
 import {
   Button,
@@ -55,32 +55,24 @@ class Email extends React.Component {
     // console.log(this.props.match.params.id,this.props.match.params.jobname)
     const resume = this.props.auth.Jobs.find(job => { if(job.JobName===this.props.match.params.jobname) 
       return true 
-  else 
-      return false
-  }).Resumes.find(resume=>{
-    if (resume._id === this.props.match.params.id)
-      return true
-    else
-      return false
-  })
-  console.log(resume)
+    else 
+        return false
+    }).Resumes.find(resume=>{
+      if (resume._id === this.props.match.params.id)
+        return true
+      else
+        return false
+    })
+    console.log(resume)
 
-    
-
-let templateParams = {
-      from_name: this.props.auth.company,//done
-      to_email: resume.emailCan,
-      to_name: `${resume.nameCan.firstName} ${resume.nameCan.lastName}`,
-      subject: this.state.subject,
-      message_html: this.state.message,
-      from_email: this.props.auth.email,//done
-    };
-    // emailjs.sendForm('recruiter_email', 'template_1dl5cvg', templateParams, 'user_HIvH1cpTFchEJ2aS8dDfZ')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
+    let templateParams = {
+        from_name: this.props.auth.company,//done
+        to_email: resume.emailCan,
+        to_name: `${resume.nameCan.firstName} ${resume.nameCan.lastName}`,
+        subject: this.state.subject,
+        message_html: this.state.message,
+        from_email: this.props.auth.email,//done
+      };
     emailjs.send(
       "recruiter_email",
       "template_1dl5cvg",

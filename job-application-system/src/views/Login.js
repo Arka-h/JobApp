@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import login from "../../actions/login"
+import login from "../actions/login"
 // reactstrap components
 import {
   FormText,

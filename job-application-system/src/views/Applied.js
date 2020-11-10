@@ -36,7 +36,6 @@ function Applied({ auth }) {
   const [tableData, setData] = React.useState(null);
 
   React.useEffect(() => {
-    console.log("I'm useEffect");
     async function fetchData() {
       const res = await Axios({
         method: "GET",

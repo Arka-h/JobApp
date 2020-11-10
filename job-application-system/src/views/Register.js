@@ -17,7 +17,7 @@
 */
 import React from "react";
 import Axios from 'axios';
-import login from '../../actions/login'
+import login from '../actions/login'
 // reactstrap components
 import {
   FormText,
