@@ -246,12 +246,13 @@ class Profile extends React.Component {
                               placeholder="Address"
                               rows="4"
                               type="textarea"
+                              value={ (this.props.auth.address === undefined) ? null : this.props.auth.address}
                             />
                           </FormGroup>
                         </Col>
                       </Row>
                       <Row>
-                        <Col lg="4">
+                        <Col lg="6">
                           <FormGroup>
                             <label
                               className="form-control-label"
@@ -267,7 +268,7 @@ class Profile extends React.Component {
                             />
                           </FormGroup>
                         </Col>
-                        <Col lg="4">
+                        <Col lg="6">
                           <FormGroup>
                             <label
                               className="form-control-label"

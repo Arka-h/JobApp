@@ -82,7 +82,7 @@ function Applied({ auth }) {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0 text-left"> All Jobs </h3>
+                    <h3 className="mb-0 text-left"> Applied Jobs </h3>
                   </div>
                   {/* <div className="col text-right">
                     <Button
