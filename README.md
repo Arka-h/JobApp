@@ -1,4 +1,4 @@
-# Job App
+# Job Recruitment App
 A prototype application platform for Job Seekers and Employers
 ![Login Page](https://github.com/Arka-h/JobApp/blob/master/job-application-system/src/assets/img/screenshots/login-filled.png)
 
